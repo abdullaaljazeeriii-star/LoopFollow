@@ -35,7 +35,7 @@ jobs:
         
       # Create or update identifiers for app
       - name: Fastlane Provision
-        run: bundle exec fastlane identifiers
+        run: fastlane identifiers
         env:
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}
